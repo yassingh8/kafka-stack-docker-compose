@@ -1,7 +1,4 @@
-version: '2.1'
-
-services:
-  zoo1:
+zoo1:
     image: zookeeper:3.4.9
     hostname: zoo1
     ports:
@@ -14,7 +11,7 @@ services:
       - ./zk-single-kafka-single/zoo1/data:/data
       - ./zk-single-kafka-single/zoo1/datalog:/datalog
 
-  kafka1:
+kafka1:
     image: confluentinc/cp-kafka:5.4.1
     hostname: kafka1
     ports:
